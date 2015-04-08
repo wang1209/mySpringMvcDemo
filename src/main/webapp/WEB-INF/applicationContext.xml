@@ -75,10 +75,10 @@
         </tx:attributes>
     </tx:advice>
     <!-- AOP配置的元素 -->
-    <aop:config>
-        <!-- 配置一个切入点 -->
+    <!--<aop:config>
+        &lt;!&ndash; 配置一个切入点 &ndash;&gt;
         <aop:pointcut id="myPointcut" expression="bean(bookService)"/>
         指定在myPointcut切入点应用txAdvice事务增强处理
         <aop:advisor advice-ref="txAdvice"                      pointcut-ref="myPointcut"/>
-    </aop:config>
+    </aop:config>-->
 </beans>

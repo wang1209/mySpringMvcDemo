@@ -2,9 +2,7 @@ package com.springapp.mvc;
 
 import java.sql.SQLException;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 
@@ -49,5 +47,9 @@ public class HomeController {
     	mv.setViewName("404");  
     	
     	return mv;  
+    }
+    @RequestMapping("/login")
+    public String login(){
+        return "account/login";
     }
 }  

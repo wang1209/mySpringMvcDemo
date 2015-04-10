@@ -5,7 +5,7 @@
   <div class="header-inner">
      <!-- BEGIN LOGO -->  
      <a class="navbar-brand" href="index.html">
-     <img src="assets/img/logo.png" alt="logo" class="img-responsive" />
+      <img src="<c:url value='/resources/images/avatar.png'/>" alt="logo" class="img-responsive" />
      </a>
      <!-- <form class="search-form search-form-header" role="form" action="index.html" >
         <div class="input-icon right">
@@ -25,7 +25,7 @@
         <!-- BEGIN USER LOGIN DROPDOWN -->
         <li class="dropdown user">
            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-           <img alt="" src="<c:url value='../../resources/images/avatar3_small.jpg'/>"/>&nbsp;
+           <img alt="" src="<c:url value='/resources/images/avatar3_small.jpg'/>"/>&nbsp;
            <span class="username"><%--${sessionScope.accountAuth.name}--%>testName</span>&nbsp;-&nbsp;
            <span class="username"><%--${sessionScope.accountAuth.accountRole.name}--%>roleName</span>
            <i class="icon-angle-down"></i>
@@ -34,7 +34,7 @@
               <li><a href="extra_profile.html"><i class="icon-user"></i>我的账户</a>
               </li>
               <li class="divider"></li>
-              <li><a href="login.html">
+              <li><a href="/account/login">
                  <i class="icon-off"></i>注销登录</a>
               </li>
            </ul>

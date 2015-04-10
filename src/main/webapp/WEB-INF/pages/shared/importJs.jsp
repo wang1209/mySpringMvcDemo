@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!-- BEGIN CORE PLUGINS -->
 	<!--[if lt IE 9]>
 	<script src="<c:url value='/resources/plugins/respond.min.js'/>" type="text/javascript"></script>

@@ -14,9 +14,9 @@
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close"
           p:driverClass="com.mysql.jdbc.Driver"
-          p:jdbcUrl="jdbc:mysql://192.168.171.137:3306/sdgdb"
-          p:user="wangyang"
-          p:password="123123"
+          p:jdbcUrl="jdbc:mysql://172.16.9.241:3306/sdgdb"
+          p:user="admin"
+          p:password="admin"
           p:maxPoolSize="40"
           p:minPoolSize="2"
           p:initialPoolSize="2"
@@ -42,9 +42,9 @@
                 <prop key="hibernate.dialect">
                     org.hibernate.dialect.MySQL5InnoDBDialect</prop>
                 <!--是否根据Hiberante映射创建数据表 -->
-<!--                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
                 <prop key="hibernate.show_sql">true</prop>
-                <prop key="hibernate.format_sql">true</prop>-->
+                <prop key="hibernate.format_sql">true</prop>
             </props>
         </property>
     </bean>
